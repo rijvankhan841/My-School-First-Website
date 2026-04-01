@@ -1,0 +1,156 @@
+/* Home Page styles */
+
+/* Font Sizes*/
+.fs1
+{
+font-size:1.2rem;
+}
+
+.fs2
+{
+font-size:1.5rem;
+}
+
+.fs3
+{
+font-size:2rem;
+}
+
+.fs4
+{
+font-size:2.5rem;
+}
+
+.fs5
+{
+font-size:3rem;
+}
+
+.fs6
+{
+font-size:3.5rem;
+}
+
+.banner
+{
+    background-image:url("../images/banner.jpg");
+    height:800px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.navbar-nav .nav-link
+{
+    color:#000000;
+    font-size:18px;
+    font-weight:500;
+    transition:color 0.3s ease,border-bottom 0.3s ease;
+    line-height:18px;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color:#555555;
+    border-bottom:2px solid #555555;
+}
+
+
+.hover-effect:hover
+{
+    background-color:#f8f9fa;
+    transform:scale(1.05);
+    transition:transform 0.3s ease,background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerLi li
+{
+list-style:none;
+margin:4px;
+text-align:center;
+}
+
+.footerLi li a
+{
+color:white;
+font-size:1.2rem;
+text-decoration:none;
+font-weight:600;
+transition:color 0.4s ease,border-bottom 0.4s ease;
+
+}
+
+.footerLi li a:hover
+{
+color:#dbb004;
+border-bottom:2px solid #dbb000;
+
+}
+
+.footer-col p a
+{
+transition:color 0.3s ease,border-bottom 0.3s ease;
+}
+
+.footer-col p a:hover
+{
+color:#dbb004;
+border-bottom:2px solid #dbb000;
+
+}
+
+/* About Page */
+@keyframes upDown
+{
+0% { transform: translateY(0); }
+50% { transform: translateY(-15px); }   
+100% { transform: translateY(0); }
+}
+
+.img1
+{
+animation: upDown 3s ease-in-out infinite;
+}
+
+.img2
+{
+animation: upDown 3s ease-in-out infinite;
+}
+
+/*  Academic Page  */
+
+.tbody tr td{
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    background-clip: text; 
+    color: transparent;
+    font-size:1.5rem;
+    font-weight:600;
+    
+}
+
+.tbody tr{
+    text-align:center;
+}
+
+
+
+

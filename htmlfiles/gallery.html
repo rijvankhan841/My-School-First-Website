@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admission Form </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Contents/css/style.css">
+</head>
+<body>
+    <header >
+         <div class="container-fluid"></div>
+            <nav class="navbar navbar-expand-md"  style="background-color:#aaaaaa">
+           
+                <a class="navbar-brand w-25" href="#">
+                    <img src="../Contents/images/logo.png" alt="Logo" width="50" class="rounded-5 ms-2">
+            
+                </a>
+                <ul class="navbar-nav justify-content-end w-75">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="about.html" target="_self">About </a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="academic.html" target="_blank">Academic</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="features.html" target="_self">Features</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="admission.html" target="_blank">Admissions</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+            
+            </nav>
+        </div>
+            
+    </header>
+
+    <main>
+        
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 1. Custom Animation on Page Load */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 2. Style for Gallery Image Container (The Card) */
+    .gallery-item {
+      overflow: hidden; /* Important for hover effect to stay within bounds */
+      border-radius: 10px; /* Thoda rounding design */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      
+      /* Apply page load animation to each card */
+      animation: fadeInUp 0.6s ease-out both;
+    }
+
+    /* 3. Staggered Animation Delay for each card */
+    .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+    .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+    .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+    .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+    .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+    .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+    .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+    .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+    .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+    
+
+    /* 4. Hover Effect on Image inside the container */
+    .gallery-item img {
+      transition: transform 0.4s ease, filter 0.3s ease; /* Smooth hover transition */
+      display: block;
+      width: 100%;
+      height: 250px; /* Fixed height for consistency, remove if not needed */
+      object-fit: cover; /* Important for aspect ratio on fixed height */
+    }
+
+    /* Zoom in and slightly brighten on hover */
+    .gallery-item:hover img {
+      transform: scale(1.1); /* Zoom in by 10% */
+      filter: brightness(1.1); /* Slight brighten */
+    }
+
+    /* Optional Overlay styling */
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.6);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.4s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      height: 100%;
+    }
+
+    .gallery-overlay h5 {
+      color: white;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5 text-info fw-bold">School Photo Gallery</h1>
+
+    <div class="row g-4"> <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/sc2.jpg" alt="Science Lab" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Science Lab 2025</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/g1.jpg" alt="Annual Sports Day" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Annual Sports Day</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/library1.jpg" alt="Library" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Student Library</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/independent.jpg" alt="Independence Day Celebration" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Independence Day</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/scl2.jpg" alt="Classroom Interaction" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Classroom Interaction</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/annual.jpg" alt="Annual Function" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Annual Function</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/robot.jpg" alt="Robotics Workshop" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Robotics Workshop</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/music.jpg" alt="Music Class" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Music Class</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="gallery-item position-relative">
+          <img src="../contents/images/act5.jpg" alt="Art Class" class="img-fluid">
+          <div class="gallery-overlay">
+            <h5>Art Class</h5>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+
+</main>
+
+
+
+    <footer class="main-footer container-fluid mt-5" style="background-color:#333333">
+        <div class="row footer-container m-2 p-2">
+        
+            <div class="footer-col col-sm-4 text-light ft1 text-center">
+                <h3 class="text-info fs2 fw-normal m-2">Global Vision School</h3>
+                <p class="fs1">We provide a nurturing environment for students to excel academically and personally/</p>
+            </div>
+            <div class="footer-col col-sm-4 text-light text-center"> 
+                <h3 class="text-info fs2 fw-normal m-2">Quick Links</h3>
+                <ul class="footerLi">
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="admission.html" target="_blank">Admissions</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col col-sm-4 text-light text-center">
+                <h3 class="text-info fs2 fw-normal m-2">Contact Us</h3>
+                <p class="fw-bolder text-light mt-3 m-2 fs1">📍123, School Lane, Delhi</p>
+                <p class="m-2">📞 <a href="tel:+919876543210" class="text-decoration-none fw-bolder text-light fs1">+91 98765 43210</a></p>
+                <p class="m-2">✉️ <a href="mailto:info@gvschool.com" class="text-decoration-none fw-bolder text-light fs1">info@gvschool.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center  text-warning">
+            <p class="m-5 mb-5 fs2">&copy; 2026 Global Vision School | Designed by [Rijvan Khan]</p>
+        </div>
+    </footer>
+
+</body>
+</html>    
