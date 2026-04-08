@@ -1,5 +1,22 @@
 /* Home Page styles */
 
+/* Background-colors */
+
+.bg1
+{
+    background-color:#fbf7f7;
+}
+
+.bg2
+{
+    background-color:#dddddd;
+}
+
+.bg3
+{
+    background-color:#cccccc;
+}
+
 /* Font Sizes*/
 .fs1
 {
@@ -142,7 +159,7 @@ animation: upDown 3s ease-in-out infinite;
     background: linear-gradient(135deg, #8e2de2, #4a00e0);
     background-clip: text; 
     color: transparent;
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-weight:600;
     
 }
@@ -152,5 +169,14 @@ animation: upDown 3s ease-in-out infinite;
 }
 
 
+/*  Feature Page */
 
+.card
+{
+    transition: border 0.1s ease;
+}
+
+.card:hover{
+    border: solid 2.5px #04c9ff;
+}
 
